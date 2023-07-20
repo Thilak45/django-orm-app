@@ -18,6 +18,7 @@ push the code to github.
 
 ## PROGRAM
 ### models.py
+```py
 from django.db import models
 from django.contrib import admin
 
@@ -30,13 +31,15 @@ class Student (models.Model):
 
 class StudentAdmin(admin.ModelAdmin):
     list_display=('referencenumber','name','age','email','mobilenumber')
+```
 
 ### admin.py
+```py
 from django.contrib import admin
 from .models import Student,StudentAdmin
 
 admin.site.register(Student,StudentAdmin) 
-             
+```          
 
 ## OUTPUT
 
